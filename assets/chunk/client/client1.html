@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-8">
+    <div class="col-5">
         <div class="card">
             <div class="card-header bg-transparent header-elements-inline py-0">
                 <h6 class="card-title py-3">Данные клиента</h6>
@@ -9,7 +9,91 @@
                 </div>
             </div>
             <div class="card-body">
-                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Клиент</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Штат сотрудников</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Менеджер</label>
+                            <select class="form-control">
+                                <option value="opt1">Иванов И. А</option>
+                                <option value="opt2">Петров М.Б</option>
+                                <option value="opt3">Сидоров К. М</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Сот. кол. центра</label>
+                            <select class="form-control">
+                                <option value="opt2">Петров М.Б</option>
+                                <option value="opt3">Сидоров К. М</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Комментарий</label>
+                            <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        [[$client3]]
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Галерея фото</h6>
+                <div class="header-elements">
+                    <button type="button" class="btn btn-light btn-sm">Добавить</button>
+                </div>
+            </div>
+            <div class="card-body">
+        
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="input-group input-group-sm mb-1">
+                    <input type="text" class="form-control" placeholder="Введите адрес">
+                    <span class="input-group-append">
+                        <button class="btn btn-light" type="button">Добавить</button>
+                    </span>
+                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AlgC8cXcwHp93uF8_BDc7SCwZVdCdPh-J&amp;width=100%&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Адрес</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>г. Самара ул. Вавилова 47</td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
