@@ -5,6 +5,7 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
+                <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_import">Изменить состояние</a>
             </div>
         </div>
     </div>
@@ -15,17 +16,12 @@
             <div class="card-header bg-transparent header-elements-inline py-0">
                 <h6 class="card-title py-3">Данные доставки</h6>
                 <div class="header-elements">
-                    
+                    <span>Номер доставки: 345</span>
+                    <span class="badge badge-success ml-2">Выполнено</span>
                 </div>
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Адрес доставки</label>
-                            <input type="text" name="name" class="form-control" placeholder=" ">
-                        </div>
-                    </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Тип доставки</label>
@@ -40,8 +36,20 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
+                            <label>Адрес доставки</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
                             <label>Контактное лицо</label>
                             <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Стоимость доставки руб.</label>
+                            <input type="text" name="name" class="form-control" placeholder=" " value="5 000" readonly>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -54,7 +62,7 @@
                 <legend class="text-uppercase font-size-sm font-weight-bold">Контейнер</legend>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>Тип контейнера</label>
                             <select class="form-control">
                                 <option value="opt1">Счет</option>
@@ -67,7 +75,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Выбор контейнера</label>
-                            <div class="input-group input-group-sm">
+                            <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Выберите контейнер">
                                 <span class="input-group-append">
                                     <button class="btn btn-light" type="button">Выбрать</button>
@@ -77,8 +85,14 @@
                     </div>
                 </div>
             </div>
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Товары контейнера</h6>
+                <div class="header-elements">
+                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Перейти в контейнер</a>
+                </div>
+            </div>
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table class="table table-striped small">
                     <thead>
                         <tr>
                             <th>Наименование</th>
@@ -86,18 +100,18 @@
                             <th>Стоимость</th>
                             <th>12313</th>
                             <th>12123</th>
-                            <th>123123</th>
+                            <th>Состояние</th>
                             <th width="40"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>12312123</td>
+                            <td>Копировальный аппарат Canon</td>
                             <td>12312312</td>
                             <td>123123</td>
                             <td>123123123</td>
                             <td>1231231</td>
-                            <td>12312312</td>
+                            <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
                             <td>1231231</td>
                         </tr>
                     </tbody>
@@ -108,7 +122,7 @@
     <div class="col-md-4">
         <div class="card">
             <div class="card-header bg-transparent header-elements-inline py-0">
-                <h6 class="card-title py-3">Файлы</h6>
+                <h6 class="card-title py-3">Привязанные документы</h6>
                 <div class="header-elements">
                     <button type="button" class="btn btn-light btn-sm">Добавить</button>
                 </div>

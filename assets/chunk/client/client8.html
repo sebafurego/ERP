@@ -10,20 +10,22 @@
         <thead>
             <tr>
               <th>id</th>
-              <th>Дата доставки</th>
+              <th>Дата занесения</th>
+              <th>Дата состояния</th>
               <th>Оплата</th>
               <th>Контактное лицо</th>
               <th>Адрес</th>
               <th>Тип</th>
               <th>Продавец</th>
               <th>Ответственный</th>
-              <th>Статус</th>
+              <th>Состояние</th>
               <th width="40"></th>
             </tr>
         </thead>
         <tbody>
             <tr>
               <td><a href="[[~40]]">456</a></td>
+              <td>23.07.2022</td>
               <td>23.07.2022</td>
               <td>Счет получателя</td>
               <td>
@@ -52,7 +54,14 @@
                   </div>
                 </div>
               </td>
-              <td><span class="badge badge-danger">Новый</span></td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div>
+                      <span class="text-body"><span class="badge badge-danger">Новый</span></span>
+                      <div class="text-muted">Иванов Иван</div>
+                  </div>
+                </div>
+              </td>
               <td>
                 <div class="list-icons">
                     <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
