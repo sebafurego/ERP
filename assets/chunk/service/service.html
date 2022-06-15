@@ -7,50 +7,76 @@
 </ul>
 
 <div class="card">
-    <div class="card-header bg-transparent header-elements-inline py-0">
-      <h6 class="card-title py-3">Сервис</h6>
-      <div class="header-elements">
-          <button type="button" class="btn btn-light btn-sm">Добавить</button>
-      </div>
+  <div class="card-header bg-white header-elements-inline">
+    <h6 class="card-title">Сервис</h6>
+    <div class="header-elements">
+      <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</button>
     </div>
-    <div class="table-responsive">
-      <table class="table table-striped">
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped small text-nowrap">
         <thead>
-          <tr>
-            <th>Номер</th>
-            <th>Тип</th>
-            <th>Причина</th>
-            <th>Дата</th>
-            <th>Срок реагирования</th>
-            <th>Инженер</th>
-            <th>Статус</th>
-            <th width="40"></th>
-          </tr>
+            <tr>
+              <th>id</th>
+              <th>Номер</th>
+              <th>Тип</th>
+              <th>Серийный №</th>
+              <th>Клиент</th>
+              <th>Цель</th>
+              <th>Результат</th>
+              <th>Тип</th>
+              <th>Дата занесения</th>
+              <th>Дата выпонения</th>
+              <th>Кто создал</th>
+              <th>Инженер</th>
+              <th>Статус</th>
+              <th width="40"></th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><b><a href="[[~34]]">304</a></b></td>
-            <td>Сервис с деталями</td>
-            <td>Сломался аппарат</td>
-            <td>23.07.2022</td>
-            <td>25.07.2022</td>
-            <td>
-              <div class="d-flex align-items-center">
-                <div>
-                    <a href="#" class="text-body font-weight-semibold letter-icon-title">Иван Иванов</a>
-                    <div class="text-muted font-size-sm">Инженер</div>
+            <tr>
+              <td><a href="[[~34]]">34</a></td>
+              <td>2323</td>
+              <td>Многофункциональное устройство Canon</td>
+              <td>2323</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div>
+                      <a href="" class="text-body font-weight-semibold letter-icon-title">ООО Ракета</a>
+                      <div class="text-muted">+7 343 567 6578</div>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td><span class="badge badge-success">Активный</span></td>
-            <td>
-              <div class="list-icons">
-                  <a href="[[~12]]" class="list-icons-item"><i class="icon-pencil7"></i></a>
-                  <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
-              </div>
-            </td>
-          </tr>
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div>
+                      <span class="text-body">Ремонт оборудования</span>
+                      <div class="text-muted">Оборудование сломалось по причине неуважения к лектричеству</div>
+                  </div>
+                </div>
+              </td>
+              <td class="text-muted">Заменили оборудование на новое</td>
+              <td>Покопийный сервис</td>
+              <td>12.07.2022</td>
+              <td>18.07.2022</td>
+              <td>Петрова Ольга</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <div>
+                      <span class="text-body">Иванов Иван</span>
+                      <div class="text-muted">Инженер</div>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge badge-danger">Новый</span></td>
+              <td>
+                <div class="list-icons">
+                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                </div>
+              </td>
+            </tr>
         </tbody>
-      </table>
-    </div>
+    </table>
+  </div>
 </div>

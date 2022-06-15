@@ -5,6 +5,186 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
+                <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_import">Сохранить</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Данные проекта</h6>
+                <div class="header-elements">
+                    <span class="badge badge-success ml-2">Новый</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Дедлайн</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Менеджер</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Цель</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Описание</label>
+                            <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Список задач </h6>
+                <div class="header-elements">
+                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить позации</a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Дедлайн</th>
+                            <th>Ответственный</th>
+                            <th>Состояние</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body">Запросить прайс</span>
+                                        <div class="text-muted">У компании партнера запросить прайс лист</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>23.07.2022</td>
+                            <td>Игорь Волочков</td>
+                            <td><span class="badge badge-danger">Новый</span></td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body">Передать документы партнеру</span>
+                                        <div class="text-muted">Передать документы главному поставщику мороженного</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>23.07.2022</td>
+                            <td>Ольга Петрова</td>
+                            <td><span class="badge badge-danger">Новый</span></td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Привязанные файлы</h6>
+                <div class="header-elements">
+                    <button type="button" class="btn btn-light btn-sm">Добавить</button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Договор оферта.pdf</td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <ul class="nav nav-tabs nav-tabs-bottom ">
+            <li class="nav-item"><a href="#tab1" class="nav-link active" data-toggle="tab">Комментарий</a></li>
+            <li class="nav-item"><a href="#tab2" class="nav-link" data-toggle="tab">История изменений</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1">
+                <div class="card">
+                    <div class="card-body">
+                        <textarea rows="3" cols="3" class="form-control" placeholder="Добавить комментарий"></textarea>
+                    </div>
+                    <div class="card-footer bg-white d-sm-flex justify-content-sm-between align-items-sm-center py-sm-2">
+                        <span></span>
+                        <button type="button" class="btn btn-light btn-sm">Добавить комментарий</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tab-pane fade" id="tab2">
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Пользователь</th>
+                                    <th>Поле</th>
+                                    <th>Было</th>
+                                    <th>Стало</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>19.05.2022 10:16</td>
+                                    <td>Админ</td>
+                                    <td>ФИО</td>
+                                    <td>Иванов</td>
+                                    <td>Петров</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tab-pane fade" id="tab3">
+                [[$client3]]
             </div>
         </div>
     </div>
