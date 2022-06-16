@@ -5,46 +5,170 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
+                <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_import">Сохранить</a>
             </div>
         </div>
     </div>
 </div>
-<div class="card">
-    <div class="card-header bg-transparent header-elements-inline py-0">
-        <h6 class="card-title py-3">Список техники</h6>
-        <div class="header-elements">
-            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</a>
-        </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-striped small">
-            <thead>
-                <tr>
-                    <th>Наименование</th>
-                    <th>Кол-во</th>
-                    <th>Стоимость</th>
-                    <th>12313</th>
-                    <th>12123</th>
-                    <th>Состояние</th>
-                    <th width="40"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Копировальный аппарат Canon</td>
-                    <td>12312312</td>
-                    <td>123123</td>
-                    <td>123123123</td>
-                    <td>1231231</td>
-                    <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
-                    <td>
-                        <div class="list-icons">
-                            <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
-                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+<ul class="nav nav-tabs nav-tabs-bottom">
+	<li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Карточка</a></li>
+	<li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Выезды</a></li>
+    <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Детали по серийному номеру</a></li>
+</ul>
+<div class="tab-content">
+	<div class="tab-pane fade show active" id="bottom-tab1">
+		<div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Карточка техники</h6>
+                        <div class="header-elements">
                         </div>
-                      </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Тип</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Серийный номер</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Клиент</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Адрес</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Контактное лицо</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Сервисный/Не сервисный</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Выбрать договор</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Продавец</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Комментарий</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Привязанные документы</h6>
+                        <div class="header-elements">
+                            <button type="button" class="btn btn-light btn-sm">Добавить</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th width="40"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Договор оферта.pdf</td>
+                                    <td>
+                                        <div class="list-icons">
+                                            <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <div class="tab-pane fade show" id="bottom-tab2">
+        [[$client10]]
+    </div>
+    <div class="tab-pane fade show" id="bottom-tab3">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Детали по серийному номеру</h6>
+                <div class="header-elements">
+                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
+                        <tr>
+                            <th>Артикул</th>
+                            <th>Наименование</th>
+                            <th>Парт №</th>
+                            <th>Кол-во</th>
+                            <th>Дата состояния</th>
+                            <th>Счетчик состояния</th>
+                            <th>Состояние</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>asd-345345</td>
+                            <td>Запчасть к копировальный аппарат Canon</td>
+                            <td>234</td>
+                            <td>2</td>
+                            <td>23.07.2022 13:45 </td>
+                            <td>1200</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body"><span class="badge badge-success">Необходимо по сервису</span></span>
+                                        <div class="text-muted">Иванов Иван</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>

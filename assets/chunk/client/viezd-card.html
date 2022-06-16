@@ -5,6 +5,7 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
+                
             </div>
         </div>
     </div>
@@ -12,6 +13,14 @@
 <ul class="nav nav-tabs nav-tabs-bottom">
     <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Общая информация</a></li>
     <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Техническая</a></li>
+    <li class="nav-item dropdown position-static">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Просмотр и печать</a>
+        <div class="dropdown-menu dropdown-menu-right" style="">
+            <a href="#basic-tab3" class="dropdown-item" data-toggle="tab">Выездная информация</a>
+            <a href="#basic-tab4" class="dropdown-item" data-toggle="tab">История выездов</a>
+            <a href="#basic-tab4" class="dropdown-item" data-toggle="tab">Акт выполненных работ</a>
+        </div>
+    </li>
 </ul>
 
 <div class="tab-content">
@@ -321,7 +330,7 @@
                         </div>
                     </div>
                     <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Список деталий по серийному номеру</h6>
+                        <h6 class="card-title py-3">Детали по серийному номеру</h6>
                         <div class="header-elements">
                             <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Перейти в контейнер</a>
                         </div>
