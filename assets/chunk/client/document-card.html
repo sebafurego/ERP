@@ -2,9 +2,407 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-6">
-                <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
+                <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i>
+                    вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
+                <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_default">
+                    <i class="icon-eye"></i>
+                </button>
+                <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_default">
+                    <i class="icon-printer"></i>
+                </button>
+                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="nav nav-tabs nav-tabs-bottom">
+    <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Исходящее письмо</a></li>
+    <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Входящее письмо</a></li>
+    <li class="nav-item dropdown position-static">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Договор поставки</a>
+        <div class="dropdown-menu dropdown-menu-right" style="">
+            <a href="#bottom-tab3" class="dropdown-item" data-toggle="tab">Карточка договора поставки</a>
+            <a href="#bottom-tab31" class="dropdown-item" data-toggle="tab">Спецификация</a>
+            <a href="#bottom-tab32" class="dropdown-item" data-toggle="tab">Дополнительные соглашения</a>
+        </div>
+    </li>
+    <li class="nav-item"><a href="#bottom-tab5" class="nav-link" data-toggle="tab">Договор услуг</a></li>
+    <li class="nav-item"><a href="#bottom-tab6" class="nav-link" data-toggle="tab">Коммерческое предложение</a></li>
+    <li class="nav-item"><a href="#bottom-tab5" class="nav-link" data-toggle="tab">Договор услуг</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="bottom-tab1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Карточка письма</h6>
+                        <div class="header-elements">
+                            <span>Номер: 345</span>
+                            <span class="badge badge-danger ml-2">Новый</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>ФИО заказчика</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Клиент</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Юр. лицо</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Подписант</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Исполнитель</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Наша компания</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Комментарий</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Текст письма</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="bottom-tab2">
+        345353534
+    </div>
+    <div class="tab-pane fade" id="bottom-tab3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Договор поставки </h6>
+                        <div class="header-elements">
+                            <span>Номер: 345</span>
+                            <span class="badge badge-danger ml-2">Новый</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>ФИО заказчика</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Клиент</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Юр. лицо</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Подписант</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Исполнитель</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Наша компания</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Комментарий</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Текст письма</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+
+                        </div><!-- row -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="bottom-tab31">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Спецификация к договору </h6>
+                        <div class="header-elements">
+                            <span>Номер: 345</span>
+                            <span class="ml-2">12.07.2022</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Срок поставки</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Условия оплаты</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Подписант наш</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Подписант со стороны клиента</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Комментарий</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Текст письма</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+
+                        </div><!-- row -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Товары/Услуги </h6>
+                        <div class="header-elements">
+                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить в
+                                ручную</a>
+                            <a class="btn btn-light btn-sm ml-2" data-toggle="modal"
+                                data-target="#modal_import">Добавить из классификатора</a>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th>Кол-во</th>
+                                    <th>Стоимость</th>
+                                    <th width="40"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Копировальный аппарат Canon</td>
+                                    <td>12</td>
+                                    <td>23 000₽</td>
+                                    <td>
+                                        <div class="list-icons">
+                                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="bottom-tab32">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Доп. соглашение</h6>
+                        <div class="header-elements">
+                            <span>Номер: 345</span>
+                            <span class="ml-2">12.07.2022</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Подписант наш</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Подписант со стороны клиента</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+
+                        </div><!-- row -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-pane fade" id="bottom-tab2">
+        345353534
+    </div>
+    <div class="tab-pane fade" id="bottom-tab6">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Коммерческое предложение </h6>
+                        <div class="header-elements">
+                            <span>Номер: 345</span>
+                            <span class="badge badge-danger ml-2">Новый</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>ФИО заказчика</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Клиент</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Юр. лицо</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Подписант</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Исполнитель</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Наша компания</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Комментарий</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Текст письма</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+
+                        </div><!-- row -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Товары/Услуги </h6>
+                        <div class="header-elements">
+                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить в
+                                ручную</a>
+                            <a class="btn btn-light btn-sm ml-2" data-toggle="modal"
+                                data-target="#modal_import">Добавить из классификатора</a>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th>Кол-во</th>
+                                    <th>Стоимость</th>
+                                    <th width="40"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Копировальный аппарат Canon</td>
+                                    <td>12</td>
+                                    <td>23 000₽</td>
+                                    <td>
+                                        <div class="list-icons">
+                                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
