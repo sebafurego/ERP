@@ -2,7 +2,8 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-6">
-                <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
+                <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i>
+                    вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
                 <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_import">Изменить состояние</a>
@@ -10,143 +11,238 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-8">
-        <div class="card">
-            <div class="card-header bg-transparent header-elements-inline py-0">
-                <h6 class="card-title py-3">Данные доставки</h6>
-                <div class="header-elements">
-                    <span>Номер доставки: 345</span>
-                    <span class="badge badge-success ml-2">Выполнено</span>
+<ul class="nav nav-tabs nav-tabs-bottom">
+    <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Данные доставки</a></li>
+    <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Обработка доставки</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="bottom-tab1">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Данные доставки</h6>
+                        <div class="header-elements">
+                            <span>Номер доставки: 345</span>
+                            <span class="badge badge-success ml-2">Выполнено</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Тип доставки</label>
+                                    <select class="form-control">
+                                        <option value="opt1">Самовывоз</option>
+                                        <option value="opt2">Транспортная</option>
+                                        <option value="opt3">Инженером</option>
+                                        <option value="opt2">Продавец</option>
+                                        <option value="opt3">Курьером</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Клиент</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Адрес доставки</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Контактное лицо</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Комментарий</label>
+                                    <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <legend class="text-uppercase font-size-sm font-weight-bold">Контейнер</legend>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group form-group-sm">
+                                    <label>Тип контейнера</label>
+                                    <select class="form-control">
+                                        <option value="opt1">Счет</option>
+                                        <option value="opt2">Выезд</option>
+                                        <option value="opt3">Подарок</option>
+                                        <option value="opt3">Инвойс поставщика</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Выбор контейнера</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Выберите контейнер">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-light" type="button">Выбрать</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Товары контейнера</h6>
+                        <div class="header-elements">
+                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Перейти в
+                                контейнер</a>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th>Кол-во</th>
+                                    <th>Стоимость</th>
+                                    <th>12313</th>
+                                    <th>12123</th>
+                                    <th>Состояние</th>
+                                    <th width="40"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Копировальный аппарат Canon</td>
+                                    <td>12312312</td>
+                                    <td>123123</td>
+                                    <td>123123123</td>
+                                    <td>1231231</td>
+                                    <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
+                                    <td>1231231</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Тип доставки</label>
-                            <input type="text" name="name" class="form-control" placeholder=" ">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Привязанные документы</h6>
+                        <div class="header-elements">
+                            <button type="button" class="btn btn-light btn-sm">Добавить</button>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Клиент</label>
-                            <input type="text" name="name" class="form-control" placeholder=" ">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Адрес доставки</label>
-                            <input type="text" name="name" class="form-control" placeholder=" ">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Контактное лицо</label>
-                            <input type="text" name="name" class="form-control" placeholder=" ">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Стоимость доставки руб.</label>
-                            <input type="text" name="name" class="form-control" placeholder=" " value="5 000" readonly>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>Комментарий</label>
-                            <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th width="40"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Договор оферта.pdf</td>
+                                    <td>
+                                        <div class="list-icons">
+                                            <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <legend class="text-uppercase font-size-sm font-weight-bold">Контейнер</legend>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group form-group-sm">
-                            <label>Тип контейнера</label>
-                            <select class="form-control">
-                                <option value="opt1">Счет</option>
-                                <option value="opt2">Выезд</option>
-                                <option value="opt3">Подарок</option>
-                                <option value="opt3">Инвойс поставщика</option>
-                            </select>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade show " id="bottom-tab2">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Обработка доставки</h6>
+                        <div class="header-elements">
+                            <span>Номер доставки: 345</span>
+                            <span class="badge badge-success ml-2">Выполнено</span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Выбор контейнера</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Выберите контейнер">
-                                <span class="input-group-append">
-                                    <button class="btn btn-light" type="button">Выбрать</button>
-                                </span>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Тип доставки</label>
+                                    <select class="form-control">
+                                        <option value="opt1">Самовывоз</option>
+                                        <option value="opt2">Транспортная</option>
+                                        <option value="opt3">Инженером</option>
+                                        <option value="opt2">Продавец</option>
+                                        <option value="opt3">Курьером</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Стоимость доставки руб.</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" " value="5 000">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Счет поставщика</label>
+                                    <input type="file" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Поставщик услуги</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Контактное лицо пост. услуги</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card-header bg-transparent header-elements-inline py-0">
-                <h6 class="card-title py-3">Товары контейнера</h6>
-                <div class="header-elements">
-                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Перейти в контейнер</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Привязанные документы</h6>
+                        <div class="header-elements">
+                            <button type="button" class="btn btn-light btn-sm">Добавить</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th width="40"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Договор оферта.pdf</td>
+                                    <td>
+                                        <div class="list-icons">
+                                            <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-striped small">
-                    <thead>
-                        <tr>
-                            <th>Наименование</th>
-                            <th>Кол-во</th>
-                            <th>Стоимость</th>
-                            <th>12313</th>
-                            <th>12123</th>
-                            <th>Состояние</th>
-                            <th width="40"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Копировальный аппарат Canon</td>
-                            <td>12312312</td>
-                            <td>123123</td>
-                            <td>123123123</td>
-                            <td>1231231</td>
-                            <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
-                            <td>1231231</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header bg-transparent header-elements-inline py-0">
-                <h6 class="card-title py-3">Привязанные документы</h6>
-                <div class="header-elements">
-                    <button type="button" class="btn btn-light btn-sm">Добавить</button>
-                </div>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Наименование</th>
-                            <th width="40"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Договор оферта.pdf</td>
-                            <td>
-                                <div class="list-icons">
-                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
-                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>

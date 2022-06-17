@@ -5,7 +5,14 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
-                
+                <div class="btn-group position-static">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Просмотр и печать</button>
+                    <div class="dropdown-menu dropdown-menu-right" style="">
+                        <a href="#" class="dropdown-item"><i class="icon-menu7"></i> Выездная информация</a>
+                        <a href="#" class="dropdown-item"><i class="icon-screen-full"></i> История выездов</a>
+                        <a href="#" class="dropdown-item"><i class="icon-mail5"></i> Акт выполненных работ</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -13,14 +20,7 @@
 <ul class="nav nav-tabs nav-tabs-bottom">
     <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Общая информация</a></li>
     <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Техническая</a></li>
-    <li class="nav-item dropdown position-static">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Просмотр и печать</a>
-        <div class="dropdown-menu dropdown-menu-right" style="">
-            <a href="#basic-tab3" class="dropdown-item" data-toggle="tab">Выездная информация</a>
-            <a href="#basic-tab4" class="dropdown-item" data-toggle="tab">История выездов</a>
-            <a href="#basic-tab4" class="dropdown-item" data-toggle="tab">Акт выполненных работ</a>
-        </div>
-    </li>
+    <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Детали по серийному номеру</a></li>
 </ul>
 
 <div class="tab-content">
@@ -29,7 +29,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Данные выезда продавец</h6>
+                        <h6 class="card-title py-3">Данные выезда</h6>
                         <div class="header-elements">
                             <div class="dropdown position-static">
                                 <a href="#" class="badge badge-indigo dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Запланировано</a>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Комментарий</label>
+                                    <label>Комментарий продавца</label>
                                     <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
                                 </div>
                             </div>
@@ -124,52 +124,6 @@
                                 </div>
                             </div>
                         </div>
-                        <legend class="text-uppercase font-size-sm font-weight-bold">Контейнер</legend>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Выбор контейнера</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Выберите контейнер">
-                                        <span class="input-group-append">
-                                            <button class="btn btn-light" type="button">Выбрать</button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Товары контейнера</h6>
-                        <div class="header-elements">
-                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Перейти в контейнер</a>
-                        </div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-striped small">
-                            <thead>
-                                <tr>
-                                    <th>Наименование</th>
-                                    <th>Кол-во</th>
-                                    <th>Стоимость</th>
-                                    <th>12313</th>
-                                    <th>12123</th>
-                                    <th>Состояние</th>
-                                    <th width="40"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Копировальный аппарат Canon</td>
-                                    <td>12312312</td>
-                                    <td>123123</td>
-                                    <td>123123123</td>
-                                    <td>1231231</td>
-                                    <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
-                                    <td>1231231</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
@@ -234,7 +188,7 @@
         </div>
     </div>
 
-    <div class="tab-pane fade" id="bottom-tab2">
+    <div class="tab-pane fade show" id="bottom-tab2">
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
@@ -259,54 +213,13 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Клиент</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" ">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Серийный номер</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="" value="Многофункциональное устройство Canon">
-                                        <span class="input-group-append">
-                                            <button class="btn btn-light" type="button">Выбрать</button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Контактное лицо</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" ">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Дата выезда</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" ">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Тип выезда</label>
-                                    <select class="form-control">
-                                        <option value="opt1">Покопийный сервис</option>
-                                        <option value="opt2">Сервис с деталями</option>
-                                        <option value="opt3">Сервис без деталий</option>
-                                        <option value="opt2">По счету</option>
-                                        <option value="opt3">Подарочный</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Выполненная работа</label>
                                     <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Комментарий</label>
                                     <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
@@ -390,6 +303,56 @@
                         </table>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade show" id="bottom-tab3">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Детали по серийному номеру</h6>
+                <div class="header-elements">
+                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
+                        <tr>
+                            <th>Артикул</th>
+                            <th>Наименование</th>
+                            <th>Парт №</th>
+                            <th>Кол-во</th>
+                            <th>Дата состояния</th>
+                            <th>Счетчик состояния</th>
+                            <th>Состояние</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>asd-345345</td>
+                            <td>Запчасть к копировальный аппарат Canon</td>
+                            <td>234</td>
+                            <td>2</td>
+                            <td>23.07.2022 13:45 </td>
+                            <td>1200</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body"><span class="badge badge-success">Необходимо по сервису</span></span>
+                                        <div class="text-muted">Иванов Иван</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
