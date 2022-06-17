@@ -12,7 +12,9 @@
 </div>
 <ul class="nav nav-tabs nav-tabs-bottom">
 	<li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Данные счета</a></li>
+    <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Товары</a></li>
 	<li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Структура счета</a></li>
+    <li class="nav-item"><a href="#bottom-tab4" class="nav-link" data-toggle="tab">Проводки</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane fade show active" id="bottom-tab1">
@@ -54,38 +56,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Товары </h6>
-                        <div class="header-elements">
-                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить позиции</a>
-                        </div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-striped small">
-                            <thead>
-                                <tr>
-                                    <th>Наименование</th>
-                                    <th>Кол-во</th>
-                                    <th>Стоимость</th>
-                                    <th>12313</th>
-                                    <th>12123</th>
-                                    <th>Состояние</th>
-                                    <th width="40"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Копировальный аппарат Canon</td>
-                                    <td>12312312</td>
-                                    <td>123123</td>
-                                    <td>123123123</td>
-                                    <td>1231231</td>
-                                    <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
-                                    <td>1231231</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-md-4">
@@ -136,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="tab-pane fade show" id="bottom-tab2">
+    <div class="tab-pane  fade show" id="bottom-tab2">
         <div class="card">
             <div class="card-body">
                 <div class="row">
@@ -195,6 +166,92 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane  fade show " id="bottom-tab3">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Товары </h6>
+                <div class="header-elements">
+                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить позиции</a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
+                        <tr>
+                            <th>Парт №</th>
+                            <th>Артикул</th>
+                            <th>Наименование</th>
+                            <th>Кол-во</th>
+                            <th>Стоимость</th>
+                            <th>Состояние</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>234</td>
+                            <td>234-DGFH</td>
+                            <td>Копировальный аппарат Canon</td>
+                            <td>12312312</td>
+                            <td>123123</td>
+                            <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane  fade show " id="bottom-tab4">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Проводки </h6>
+                <div class="header-elements">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Дата</th>
+                            <th>Наименование</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>234</td>
+                            <td>23.07.2022</td>
+                            <td>Расходная накладная</td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>234</td>
+                            <td>23.07.2022</td>
+                            <td>Акт выполненных работ</td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
