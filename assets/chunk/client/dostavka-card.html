@@ -1,3 +1,85 @@
+<div id="modal_default" class="modal fade" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Выбрать контейнер</h5>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Тип контейнера</label>
+                            <select class="form-control">
+                                <option value="opt1">Счет</option>
+                                <option value="opt2">Подарок</option>
+                                <option value="opt3">Выезд инженера</option>
+                                <option value="opt2">Инвойс поставщика</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Номер</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Контрагент</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small table-sm">
+                    <thead>
+                        <tr>
+                          <th>id</th>
+                          
+                          
+                          <th>Контрагент</th>
+                          
+                          <th>Комментарий</th>
+                          
+                          
+                          <th>Сумма</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td><a href="kartochka-scheta.html">343</a></td>
+                          
+                          
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <div>
+                                  <a href="" class="text-body font-weight-semibold letter-icon-title">ООО Ракета</a>
+                                  <div class="text-muted">+7 343 567 6578</div>
+                              </div>
+                            </div>
+                          </td>
+                          
+                          <td>Для оплаты товаров</td>
+                          
+                          
+                          <td>100 000 ₽</td>
+                          
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+            <div class="modal-footer pt-3">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-body">
         <div class="row">
@@ -66,61 +148,47 @@
                                 </div>
                             </div>
                         </div>
-                        <legend class="text-uppercase font-size-sm font-weight-bold">Контейнер</legend>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group form-group-sm">
-                                    <label>Тип контейнера</label>
-                                    <select class="form-control">
-                                        <option value="opt1">Счет</option>
-                                        <option value="opt2">Выезд</option>
-                                        <option value="opt3">Подарок</option>
-                                        <option value="opt3">Инвойс поставщика</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Выбор контейнера</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Выберите контейнер">
-                                        <span class="input-group-append">
-                                            <button class="btn btn-light" type="button">Выбрать</button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                </div>
+                <div class="card">
                     <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Товары контейнера</h6>
+                        <h6 class="card-title py-3">Привязать контейнер</h6>
                         <div class="header-elements">
-                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Перейти в
-                                контейнер</a>
+                            <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_default">Добавить</button>
                         </div>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped small">
                             <thead>
                                 <tr>
-                                    <th>Наименование</th>
-                                    <th>Кол-во</th>
-                                    <th>Стоимость</th>
-                                    <th>12313</th>
-                                    <th>12123</th>
-                                    <th>Состояние</th>
+                                    <th>Номер</th>
+                                    <th>Контрагент</th>
+                                    <th>Габариты</th>
+                                    <th>Масса</th>
+                                    <th>Тип</th>
                                     <th width="40"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Копировальный аппарат Canon</td>
-                                    <td>12312312</td>
-                                    <td>123123</td>
-                                    <td>123123123</td>
-                                    <td>1231231</td>
-                                    <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
-                                    <td>1231231</td>
+                                    <td><a href="">234</a></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                          <div>
+                                              <a href="" class="text-body font-weight-semibold letter-icon-title">ООО Ракета</a>
+                                              <div class="text-muted">+7 343 567 6578</div>
+                                          </div>
+                                        </div>
+                                    </td>
+                                    <td>345x23x115</td>
+                                    <td>3 kg.</td>
+                                    <td>Счет</td>
+                                    <td>
+                                        <div class="list-icons">
+                                            <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -168,7 +236,7 @@
                         <h6 class="card-title py-3">Обработка доставки</h6>
                         <div class="header-elements">
                             <span>Номер доставки: 345</span>
-                            <span class="badge badge-success ml-2">Выполнено</span>
+                            <span class="badge badge-info ml-2">Распределено</span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -209,6 +277,30 @@
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Дата доставки</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Данные автомобиля</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Данные водителя</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Привязать скан накладной</label>
+                                    <input type="file" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -226,12 +318,14 @@
                             <thead>
                                 <tr>
                                     <th>Наименование</th>
+                                    <th>Состояние</th>
                                     <th width="40"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Договор оферта.pdf</td>
+                                    <td><span class="badge badge-success">Передано водителю</span></td>
                                     <td>
                                         <div class="list-icons">
                                             <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
