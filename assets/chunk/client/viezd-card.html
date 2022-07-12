@@ -1,3 +1,30 @@
+<div id="modal_mini" class="modal fade" aria-hidden="true">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Изменить состояние</h5>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Выберите состояние</label>
+                    <select class="form-control">
+                        <option value="opt1">Закупить</option>
+                        <option value="opt2">Резерв на складе</option>
+                        <option value="opt3">Предоставлено к отдаче со склада</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-body">
         <div class="row">
@@ -8,9 +35,10 @@
                 <div class="btn-group position-static">
                     <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Просмотр и печать</button>
                     <div class="dropdown-menu dropdown-menu-right" style="">
-                        <a href="#" class="dropdown-item"><i class="icon-menu7"></i> Выездная информация</a>
-                        <a href="#" class="dropdown-item"><i class="icon-screen-full"></i> История выездов</a>
-                        <a href="#" class="dropdown-item"><i class="icon-mail5"></i> Акт выполненных работ</a>
+                        <a href="#" class="dropdown-item">Выездная информация</a>
+                        <a href="#" class="dropdown-item">История выездов</a>
+                        <a href="#" class="dropdown-item">Акт выполненных работ</a>
+                        <a href="#" class="dropdown-item">Детали под выезд</a>
                     </div>
                 </div>
             </div>
@@ -213,6 +241,13 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Инженер</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-8"></div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Выполненная работа</label>
@@ -225,6 +260,7 @@
                                     <textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
                                 </div>
                             </div>
+                            
                             <div class="col-md-12">
                                 <legend class="text-uppercase font-size-sm font-weight-bold">Показания счетчика</legend>
                             </div>
@@ -281,13 +317,19 @@
             <div class="card-header bg-transparent header-elements-inline py-0">
                 <h6 class="card-title py-3">Детали по серийному номеру</h6>
                 <div class="header-elements">
-                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</a>
+                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_mini">Изменить состояние</a>
+                    <a class="btn btn-light btn-sm ml-2" data-toggle="modal" data-target="#modal_import">Добавить</a>
                 </div>
             </div>
             <div class="table-responsive">
                 <table class="table table-striped small">
                     <thead>
                         <tr>
+                            <th width="40">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static">
+                                </div>
+                            </th>
                             <th>Артикул</th>
                             <th>Наименование</th>
                             <th>Парт №</th>
@@ -300,6 +342,11 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static">
+                                </div>
+                            </td>
                             <td>asd-345345</td>
                             <td>Запчасть к копировальный аппарат Canon</td>
                             <td>234</td>

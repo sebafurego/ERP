@@ -15,6 +15,7 @@
     <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Товары</a></li>
 	<li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Структура счета</a></li>
     <li class="nav-item"><a href="#bottom-tab4" class="nav-link" data-toggle="tab">Проводки</a></li>
+    <li class="nav-item"><a href="#bottom-tab5" class="nav-link" data-toggle="tab">Финансовые операции</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane fade show active" id="bottom-tab1">
@@ -46,6 +47,16 @@
                                 <div class="form-group">
                                     <label>Реквизиты</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Категория</label>
+                                    <select class="form-control">
+                                        <option value="opt1">Товар</option>
+                                        <option value="opt2">Сервис</option>
+                                        <option value="opt3">Прочие услуги/товары</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -225,7 +236,12 @@
                         <tr>
                             <th>№</th>
                             <th>Дата</th>
-                            <th>Наименование</th>
+                            <th>Тип</th>
+                            <th>Откуда</th>
+                            <th>Куда</th>
+                            <th>Контрагент</th>
+                            <th>№ счет-фактуры</th>
+                            <th>Номер счета</th>
                             <th width="40"></th>
                         </tr>
                     </thead>
@@ -234,6 +250,11 @@
                             <td>234</td>
                             <td>23.07.2022</td>
                             <td>Расходная накладная</td>
+                            <td>Оперативный склад </td>
+                            <td>Счет клиенту №644/2022</td>
+                            <td>ООО Ромашка</td>
+                            <td>557</td>
+                            <td>345</td>
                             <td>
                                 <div class="list-icons">
                                     <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
@@ -241,10 +262,41 @@
                                 </div>
                             </td>
                         </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane  fade show " id="bottom-tab5">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Финансовые операции </h6>
+                <div class="header-elements">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
                         <tr>
-                            <td>234</td>
+                            <th>Номер</th>
+                            <th>Дата</th>
+                            <th>Тип проводки</th>
+                            <th>По документу</th>
+                            <th>На Р/С №</th>
+                            <th>Сумма</th>
+                            <th>Состояние</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="[[~89]]">23/3456</a></td>
                             <td>23.07.2022</td>
-                            <td>Акт выполненных работ</td>
+                            <td>Поступление денежных средств по счету</td>
+                            <td>Счет киленту №82/23</td>
+                            <td>3454567 345345 345433 <br>ООО Винком</td>
+                            <td>12 000 ₽</td>
+                            <td><span class="badge badge-info">Проведено</span></td>
                             <td>
                                 <div class="list-icons">
                                     <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
