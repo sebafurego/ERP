@@ -5,7 +5,8 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
-                <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_import">Сохранить</a>
+                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Редактировать</button>
+                <button class="btn btn-light btn-sm ьд-2" data-toggle="modal" data-target="#modal_import">Сохранить</button>
             </div>
         </div>
     </div>
@@ -23,10 +24,12 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Данные счета</h6>
+                        <h6 class="card-title py-3">Данные счета №345</h6>
                         <div class="header-elements">
-                            <span>Номер счета: 345</span>
-                            <span class="badge badge-success ml-2">Выполнено</span>
+                            <span>Товарное состояние:</span>
+                            <span class="badge badge-success mr-3">Выписано</span>
+                            <span>Финсостояние:</span>
+                            <span class="badge badge-warning">Неоплачен</span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -39,19 +42,13 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Юр. лицо</label>
+                                    <label>Дата счета</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Реквизиты</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" ">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Плательщик</label>
+                                    <label>Юр. лицо/Плательщик</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
@@ -207,45 +204,82 @@
         </div>
     </div>
     <div class="tab-pane  fade show " id="bottom-tab3">
-        <div class="card">
-            <div class="card-header bg-transparent header-elements-inline py-0">
-                <h6 class="card-title py-3">Товары </h6>
-                <div class="header-elements">
-                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить позиции</a>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Товары </h6>
+                        <div class="header-elements">
+                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Изменить состояние</a>
+                            <a class="btn btn-light btn-sm ml-2" data-toggle="modal" data-target="#modal_import">Добавить позиции</a>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead>
+                                <tr>
+                                    <th>Парт №</th>
+                                    <th>Артикул</th>
+                                    <th>Наименование</th>
+                                    <th>Кол-во</th>
+                                    <th>Цена</th>
+                                    <th>Стоимость</th>
+                                    <th>Состояние</th>
+                                    <th>Наличие на складе</th>
+                                    <th width="40"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>234</td>
+                                    <td>234-DGFH</td>
+                                    <td>Копировальный аппарат Canon</td>
+                                    <td>1</td>
+                                    <td>12 000</td>
+                                    <td>12 000</td>
+                                    <td><span class="badge badge-info">Выписано</span></td>
+                                    <td><a href="#">14</a></td>
+                                    <td>
+                                        <div class="list-icons">
+                                            <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                            <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="table-responsive">
-                <table class="table table-striped small">
-                    <thead>
-                        <tr>
-                            <th>Парт №</th>
-                            <th>Артикул</th>
-                            <th>Наименование</th>
-                            <th>Кол-во</th>
-                            <th>Цена</th>
-                            <th>Стоимость</th>
-                            <th>Состояние</th>
-                            <th width="40"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>234</td>
-                            <td>234-DGFH</td>
-                            <td>Копировальный аппарат Canon</td>
-                            <td>1</td>
-                            <td>12 000</td>
-                            <td>12 000</td>
-                            <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
-                            <td>
-                                <div class="list-icons">
-                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
-                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead>
+                                <tr>
+                                    <th>Склад</th>
+                                    <th>Физ. остаток</th>
+                                    <th>Резерв</th>
+                                    <th>Лог. остаток</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Покопийный склад</td>
+                                    <td>8</td>
+                                    <td><a href="" data-toggle="modal" data-target="#modal_large">2</a></td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Оперативный склад</td>
+                                    <td>8</td>
+                                    <td><a href="">2</a></td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

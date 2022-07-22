@@ -5,6 +5,8 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
+                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Редактировать</button>
+                <button class="btn btn-light btn-sm ьд-2" data-toggle="modal" data-target="#modal_import">Сохранить</button>
             </div>
         </div>
     </div>
@@ -59,7 +61,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Ответственный</label>
+                            <label>Продавец</label>
                             <input type="text" name="name" class="form-control" placeholder=" ">
                         </div>
                     </div>
@@ -94,7 +96,7 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table class="table table-striped small">
                     <thead>
                         <tr>
                             <th>Наименование</th>
@@ -109,6 +111,33 @@
                                     <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
                                     <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
                                 </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">История состояний</h6>
+                <div class="header-elements">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Состояние</th>
+                            <th>Автор</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>23.07.2022</td>
+                            <td>Запланировано</td>
+                            <td>
+                                Иванов Иван
                             </td>
                         </tr>
                     </tbody>
