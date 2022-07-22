@@ -5,7 +5,9 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
-                <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_import">Сохранить</a>
+                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Редактировать</button>
+                <button class="btn btn-light btn-sm ьд-2" data-toggle="modal" data-target="#modal_import">Сохранить</button>
+
             </div>
         </div>
     </div>
@@ -13,6 +15,7 @@
 <ul class="nav nav-tabs nav-tabs-bottom">
 	<li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Карточка подарка</a></li>
     <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Товары</a></li>
+    <li class="nav-item"><a href="#bottom-tab4" class="nav-link" data-toggle="tab">Проводки</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane fade show active" id="bottom-tab1">
@@ -46,6 +49,12 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>Контактное лицо</label>
+                            <input type="text" name="name" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>Номер подарка</label>
                             <input type="text" name="name" class="form-control" placeholder=" ">
                         </div>
                     </div>
@@ -89,7 +98,64 @@
                             <td>1</td>
                             <td>12 000</td>
                             <td>12 000</td>
-                            <td><span class="badge badge-info">Предоставленно к отдаче</span></td>
+                            <td><span class="badge badge-info">Возращено на склад</span></td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane  fade show " id="bottom-tab4">
+        <div class="card">
+            <div class="card-header bg-transparent header-elements-inline py-0">
+                <h6 class="card-title py-3">Проводки </h6>
+                <div class="header-elements">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped small">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Дата</th>
+                            <th>Тип проводки</th>
+                            <th>Тип/№ документа</th>
+                            <th>Откуда</th>
+                            <th>Куда</th>
+                            <th>Контрагент</th>
+                            <th width="40"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>234</td>
+                            <td>23.07.2022</td>
+                            <td>Расход</td>
+                            <td>Подарок №432</td>
+                            <td>Подарок клиенту №644/2022</td>
+                            <td>Оперативный склад </td>
+                            <td>ООО Ромашка</td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>235</td>
+                            <td>24.07.2022</td>
+                            <td>Приход</td>
+                            <td>Подарок №432</td>
+                            <td>Счет клиенту №644/2022</td>
+                            <td>Оперативный склад </td>
+                            <td>ООО Ромашка</td>
                             <td>
                                 <div class="list-icons">
                                     <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
