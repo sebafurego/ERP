@@ -5,6 +5,7 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
+                <a class="btn btn-light btn-sm mr-2" data-toggle="modal" data-target="#modal_import">Редактировать</a>
                 <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_import">Сохранить</a>
             </div>
         </div>
@@ -81,6 +82,18 @@
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Счетчик монохром</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Счетчик цвет</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Комментарий</label>
@@ -116,6 +129,30 @@
                                             <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
                                         </div>
                                     </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Пользователь</th>
+                                    <th>Поле</th>
+                                    <th>Было</th>
+                                    <th>Стало</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>19.05.2022 10:16</td>
+                                    <td>Иванов Иван</td>
+                                    <td>Счетчик монохром</td>
+                                    <td>23000</td>
+                                    <td>25000</td>
                                 </tr>
                             </tbody>
                         </table>

@@ -12,7 +12,7 @@
     </div>
 </div>
 <ul class="nav nav-tabs nav-tabs-bottom">
-    <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Карточка проекта</a></li>
+    <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Карточка задачи</a></li>
     <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Список участников</a></li>
 </ul>
 <div class="tab-content">
@@ -119,7 +119,14 @@
                                 <a href="#" class="list-icons-item" data-popup="tooltip" data-container="body" title="" data-original-title="Send video"><i class="icon-file-video"></i></a>
                                 <a href="#" class="list-icons-item" data-popup="tooltip" data-container="body" title="" data-original-title="Send file"><i class="icon-file-plus"></i></a>
                             </div>
-
+                            <span style="flex:1" class=" text-right">Блокиратор: </span>
+                            <div class="form-group  mb-0 mr-2 ml-1" width="220">
+                                <select class="form-control">
+                                    <option value="opt1">Иванов Иван</option>
+                                    <option value="opt2">Петров Петр</option>
+                                    <option value="opt3">Сергеев Сергей</option>
+                                </select>
+                            </div>
                             <button type="button" class="btn btn-teal btn-labeled btn-labeled-right ml-auto"><b><i class="icon-paperplane"></i></b> Send</button>
                         </div>
                     </div>
@@ -136,15 +143,27 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Дедлайн</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Ответственный</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Аудитор</label>
+                                    <input type="text" name="name" class="form-control" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Клиент</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
