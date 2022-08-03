@@ -32,15 +32,8 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
-                <div class="btn-group position-static">
-                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Просмотр и печать</button>
-                    <div class="dropdown-menu dropdown-menu-right" style="">
-                        <a href="#" class="dropdown-item">Выездная информация</a>
-                        <a href="#" class="dropdown-item">История выездов</a>
-                        <a href="#" class="dropdown-item">Акт выполненных работ</a>
-                        <a href="#" class="dropdown-item">Детали под выезд</a>
-                    </div>
-                </div>
+                <button type="button" class="btn btn-light ">Редактировать</button>
+                <button type="button" class="btn btn-light ml-2">Сохранить</button>
             </div>
         </div>
     </div>
@@ -96,7 +89,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Контактное лицо</label>
+                                    <label>Привязанное контактное лицо</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
@@ -112,9 +105,29 @@
                                     <select class="form-control">
                                         <option value="opt1">Покопийный сервис</option>
                                         <option value="opt2">Сервис с деталями</option>
-                                        <option value="opt3">Сервис без деталий</option>
+                                        <option value="opt3">Сервис без деталей</option>
                                         <option value="opt2">По счету</option>
                                         <option value="opt3">Подарочный</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Привязать счет/подарок</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="" value="">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-light" type="button">Выбрать</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Стационарный</label>
+                                    <select class="form-control">
+                                        <option value="opt1">Нет</option>
+                                        <option value="opt2">Да</option>
                                     </select>
                                 </div>
                             </div>
@@ -356,7 +369,142 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div>
+                                        <span class="text-body"><span class="badge badge-success">Предоставлено к отдаче</span></span>
+                                        <div class="text-muted">Иванов Иван</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static">
+                                </div>
+                            </td>
+                            <td>asd-345345</td>
+                            <td>Запчасть к копировальный аппарат Canon</td>
+                            <td>234</td>
+                            <td>2</td>
+                            <td>23.07.2022 13:45 </td>
+                            <td>1200</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body"><span class="badge badge-warning">Необходимо за счет клиента</span></span>
+                                        <div class="text-muted">Иванов Иван</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static">
+                                </div>
+                            </td>
+                            <td>asd-345345</td>
+                            <td>Запчасть к копировальный аппарат Canon</td>
+                            <td>234</td>
+                            <td>2</td>
+                            <td>23.07.2022 13:45 </td>
+                            <td>1200</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
                                         <span class="text-body"><span class="badge badge-success">Необходимо по сервису</span></span>
+                                        <div class="text-muted">Иванов Иван</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static">
+                                </div>
+                            </td>
+                            <td>asd-345345</td>
+                            <td>Запчасть к копировальный аппарат Canon</td>
+                            <td>234</td>
+                            <td>2</td>
+                            <td>23.07.2022 13:45 </td>
+                            <td>1200</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body"><span class="badge badge-info">Установлено без отдачи со склада</span></span>
+                                        <div class="text-muted">Иванов Иван</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static">
+                                </div>
+                            </td>
+                            <td>asd-345345</td>
+                            <td>Запчасть к копировальный аппарат Canon</td>
+                            <td>234</td>
+                            <td>2</td>
+                            <td>23.07.2022 13:45 </td>
+                            <td>1200</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body"><span class="badge badge-success">Установлено</span></span>
+                                        <div class="text-muted">Иванов Иван</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="list-icons">
+                                    <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                                    <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static">
+                                </div>
+                            </td>
+                            <td>asd-345345</td>
+                            <td>Запчасть к копировальный аппарат Canon</td>
+                            <td>234</td>
+                            <td>2</td>
+                            <td>23.07.2022 13:45 </td>
+                            <td>1200</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="text-body"><span class="badge badge-danger">Возвращено на склад</span></span>
                                         <div class="text-muted">Иванов Иван</div>
                                     </div>
                                 </div>
