@@ -42,6 +42,7 @@
     <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Общая информация</a></li>
     <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Техническая</a></li>
     <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Детали по серийному номеру</a></li>
+    <li class="nav-item"><a href="#bottom-tab4" class="nav-link" data-toggle="tab">Сервисный наряд заказ</a></li>
 </ul>
 
 <div class="tab-content">
@@ -396,7 +397,7 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <span class="text-body"><span class="badge badge-warning">Необходимо за счет клиента</span></span>
+                                        <span class="text-body"><span class="badge badge-grey">Закупить</span></span>
                                         <div class="text-muted">Иванов Иван</div>
                                     </div>
                                 </div>
@@ -450,7 +451,7 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <span class="text-body"><span class="badge badge-info">Установлено без отдачи со склада</span></span>
+                                        <span class="text-body"><span class="badge badge-info">Резерв во внешнем заказе</span></span>
                                         <div class="text-muted">Иванов Иван</div>
                                     </div>
                                 </div>
@@ -520,5 +521,49 @@
                 </table>
             </div>
         </div>
+    </div>
+    <div class="tab-pane fade show" id="bottom-tab4">
+        <div class="card">
+            <div class="card-header bg-white header-elements-inline">
+              <h6 class="card-title">Сервисный наряд заказ</h6>
+              <div class="header-elements">
+                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</button>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped small">
+                  <thead>
+                      <tr>
+                        <th>id</th>
+                        <th>Дата создания</th>
+                        <th>Контрагент</th>
+                        <th>Состояние</th>
+                        <th width="40"></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td><a href="kartochka-scheta.html">343</a></td>
+                        <td>23.07.2022</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div>
+                                <a href="" class="text-body font-weight-semibold letter-icon-title">ООО Ракета</a>
+                                <div class="text-muted">+7 343 567 6578</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="badge badge-info">На складе</span></td>
+                        <td>
+                          <div class="list-icons">
+                              <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                              <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
     </div>
 </div>
