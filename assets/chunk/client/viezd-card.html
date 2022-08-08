@@ -32,8 +32,8 @@
                 <a href="[[~12]]" button="button" class="btn btn-link btn-sm"><i class="icon-circle-left2 mr-2"></i> вернуться к списку</a>
             </div>
             <div class="col-md-6 text-right">
-                <button type="button" class="btn btn-light ">Редактировать</button>
-                <button type="button" class="btn btn-light ml-2">Сохранить</button>
+                <!--<button type="button" class="btn btn-light ">Редактировать</button>
+                <button type="button" class="btn btn-light ml-2">Сохранить</button>-->
             </div>
         </div>
     </div>
@@ -331,7 +331,7 @@
             <div class="card-header bg-transparent header-elements-inline py-0">
                 <h6 class="card-title py-3">Детали по серийному номеру</h6>
                 <div class="header-elements">
-                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_mini">Изменить состояние</a>
+                    <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_mini">Сформировать наряд заказ</a>
                     <a class="btn btn-light btn-sm ml-2" data-toggle="modal" data-target="#modal_import">Добавить</a>
                 </div>
             </div>
@@ -370,8 +370,8 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <span class="text-body"><span class="badge badge-success">Предоставлено к отдаче</span></span>
-                                        <div class="text-muted">Иванов Иван</div>
+                                        <span class="text-body"><span class="badge badge-info">Предоставлено к отдаче</span></span>
+                                        <div class="text-muted"><a href="">Наряд заказ №43</a></div>
                                     </div>
                                 </div>
                             </td>
@@ -397,8 +397,8 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <span class="text-body"><span class="badge badge-grey">Закупить</span></span>
-                                        <div class="text-muted">Иванов Иван</div>
+                                        <span class="text-body"><span class="badge badge-warning">Закупить</span></span>
+                                        <div class="text-muted"><a href="">Наряд заказ №56</a></div>
                                     </div>
                                 </div>
                             </td>
@@ -424,8 +424,8 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <span class="text-body"><span class="badge badge-success">Необходимо по сервису</span></span>
-                                        <div class="text-muted">Иванов Иван</div>
+                                        <span class="text-body"><span class="badge badge-warning">Необходимо по сервису</span></span>
+                                        <div class="text-muted"><a href="">Наряд заказ №45</a></div>
                                     </div>
                                 </div>
                             </td>
@@ -451,8 +451,8 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <span class="text-body"><span class="badge badge-info">Резерв во внешнем заказе</span></span>
-                                        <div class="text-muted">Иванов Иван</div>
+                                        <span class="text-body"><span class="badge badge-warning">Резерв во внешнем заказе</span></span>
+                                        <div class="text-muted"><a href="">Наряд заказ №45</a></div>
                                     </div>
                                 </div>
                             </td>
@@ -537,13 +537,14 @@
                         <th>id</th>
                         <th>Дата создания</th>
                         <th>Контрагент</th>
+                        <th>Серийный номер</th>
                         <th>Состояние</th>
                         <th width="40"></th>
                       </tr>
                   </thead>
                   <tbody>
                       <tr>
-                        <td><a href="kartochka-scheta.html">343</a></td>
+                        <td><a href="[[~108]]">43</a></td>
                         <td>23.07.2022</td>
                         <td>
                           <div class="d-flex align-items-center">
@@ -552,6 +553,9 @@
                                 <div class="text-muted">+7 343 567 6578</div>
                             </div>
                           </div>
+                        </td>
+                        <td>
+                            xyz-2323
                         </td>
                         <td><span class="badge badge-info">На складе</span></td>
                         <td>
