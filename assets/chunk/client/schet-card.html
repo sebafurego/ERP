@@ -13,7 +13,8 @@
 </div>
 <ul class="nav nav-tabs nav-tabs-bottom">
 	<li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Данные счета</a></li>
-    <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Товары/Услуги</a></li>
+    <li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Номенклатура</a></li>
+    <li class="nav-item"><a href="#bottom-tab33" class="nav-link" data-toggle="tab">Состояние товара</a></li>
 	<li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Структура счета</a></li>
     <li class="nav-item"><a href="#bottom-tab4" class="nav-link" data-toggle="tab">Проводки</a></li>
     <li class="nav-item"><a href="#bottom-tab5" class="nav-link" data-toggle="tab">Финансовые операции</a></li>
@@ -205,12 +206,11 @@
     </div>
     <div class="tab-pane  fade show " id="bottom-tab3">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Товары </h6>
+                        <h6 class="card-title py-3">Номенклатура </h6>
                         <div class="header-elements">
-                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Изменить состояние</a>
                             <a class="btn btn-light btn-sm ml-2" data-toggle="modal" data-target="#modal_import">Добавить позиции</a>
                         </div>
                     </div>
@@ -224,7 +224,6 @@
                                     <th>Кол-во</th>
                                     <th>Цена</th>
                                     <th>Стоимость</th>
-                                    <th>Состояние</th>
                                     <th>Наличие на складе</th>
                                     <th width="40"></th>
                                 </tr>
@@ -234,10 +233,9 @@
                                     <td>234</td>
                                     <td>234-DGFH</td>
                                     <td>Копировальный аппарат Canon</td>
-                                    <td>1</td>
+                                    <td>10</td>
                                     <td>12 000</td>
-                                    <td>12 000</td>
-                                    <td><span class="badge badge-info">Выписано</span></td>
+                                    <td>120 000</td>
                                     <td><a href="#">14</a></td>
                                     <td>
                                         <div class="list-icons">
@@ -253,7 +251,6 @@
                                     <td>1</td>
                                     <td>12 000</td>
                                     <td>12 000</td>
-                                    <td><span class="badge badge-info">Выписано</span></td>
                                     <td>-</td>
                                     <td>
                                         <div class="list-icons">
@@ -261,6 +258,81 @@
                                             <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
                                         </div>
                                     </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane  fade show " id="bottom-tab33">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-transparent header-elements-inline py-0">
+                        <h6 class="card-title py-3">Состояние товара/услуг </h6>
+                        <div class="header-elements">
+                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Изменить состояние</a>
+                            <a class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Сформировать расходную накладную</a>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead>
+                                <tr>
+                                    <th width="40">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input position-static">
+                                        </div>
+                                    </th>
+                                    <th>Артикул</th>
+                                    <th>Парт №</th>
+                                    <th>Наименование</th>
+                                    <th>Кол-во</th>
+                                    <th>Состояние</th>
+                                    <th>Наличие на складе</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input position-static">
+                                        </div>
+                                    </td>
+                                    <td>234</td>
+                                    <td>234-DGFH</td>
+                                    <td>Копировальный аппарат Canon</td>
+                                    <td>1</td>
+                                    <td><span class="badge badge-info">Выписано</span></td>
+                                    <td><a href="#">14</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input position-static">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Выезд на ремонт аппарат Canon</td>
+                                    <td>1</td>
+                                    <td><span class="badge badge-info">Выписано</span></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input position-static">
+                                        </div>
+                                    </td>
+                                    <td>234</td>
+                                    <td>234-DGFH</td>
+                                    <td>Копировальный аппарат Canon</td>
+                                    <td>9</td>
+                                    <td><span class="badge badge-warning">Резерв на складе</span></td>
+                                    <td><a href="#">14</a></td>
                                 </tr>
                             </tbody>
                         </table>
