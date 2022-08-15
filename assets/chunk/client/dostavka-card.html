@@ -97,6 +97,7 @@
 <ul class="nav nav-tabs nav-tabs-bottom">
     <li class="nav-item"><a href="#bottom-tab1" class="nav-link active" data-toggle="tab">Данные доставки</a></li>
     <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Обработка доставки</a></li>
+    <li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Оплата доставки</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane fade show active" id="bottom-tab1">
@@ -165,7 +166,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header bg-transparent header-elements-inline py-0">
-                        <h6 class="card-title py-3">Привязать контейнер</h6>
+                        <h6 class="card-title py-3">Накладные</h6>
                         <div class="header-elements">
                             <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_default">Добавить</button>
                         </div>
@@ -175,7 +176,7 @@
                             <thead>
                                 <tr>
                                     <th>Номер</th>
-                                    <th>Тип</th>
+                                    <th>По документу</th>
                                     <th>Контрагент</th>
                                     <th>Габариты</th>
                                     <th>Масса</th>
@@ -185,7 +186,7 @@
                             <tbody>
                                 <tr>
                                     <td><a href="">234</a></td>
-                                    <td>Счет</td>
+                                    <td>Счет №345</td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                           <div>
@@ -292,38 +293,13 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Стоимость доставки руб.</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" " value="5 000">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Счет поставщика</label>
-                                    <input type="file" name="name" class="form-control" placeholder=" ">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
                                     <label>Поставщик услуги</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label>Контактное лицо пост. услуги</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" ">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
                                     <label>Дата доставки</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" ">
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Исполнитель</label>
                                     <input type="text" name="name" class="form-control" placeholder=" ">
                                 </div>
                             </div>

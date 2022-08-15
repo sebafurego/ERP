@@ -18,6 +18,7 @@
 	<li class="nav-item"><a href="#bottom-tab3" class="nav-link" data-toggle="tab">Контактные лица</a></li>
 	<li class="nav-item"><a href="#bottom-tab4" class="nav-link" data-toggle="tab">Список дел</a></li>
 	<li class="nav-item"><a href="#bottom-tab5" class="nav-link" data-toggle="tab">Счета</a></li>
+	<li class="nav-item"><a href="#bottom-tab12" class="nav-link" data-toggle="tab">Передача ТМЦ</a></li>
 	<li class="nav-item"><a href="#bottom-tab11" class="nav-link" data-toggle="tab">Подарки</a></li>
 	<li class="nav-item"><a href="#bottom-tab6" class="nav-link" data-toggle="tab">Документы</a></li>
 	<li class="nav-item"><a href="#bottom-tab7" class="nav-link" data-toggle="tab">Задачи</a></li>
@@ -68,5 +69,61 @@
 	</div>
 	<div class="tab-pane fade" id="bottom-tab11">
 		[[$client11]]
+	</div>
+	<div class="tab-pane fade" id="bottom-tab12">
+		<div class="card">
+			<div class="card-header bg-white header-elements-inline">
+			  <h6 class="card-title">Передача ТМЦ</h6>
+			  <div class="header-elements">
+				<button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</button>
+			  </div>
+			</div>
+			<div class="table-responsive">
+			  <table class="table table-striped small">
+				  <thead>
+					  <tr>
+						<th>id</th>
+						<th>Дата создания</th>
+						<th>Клиент</th>
+						<th>Комментарий</th>
+						<th>Товарное состояние</th>
+						<th>Ответственный</th>
+						<th>Сумма</th>
+						<th width="40"></th>
+					  </tr>
+				  </thead>
+				  <tbody>
+					  <tr>
+						<td><a href="[[~111]]">343</a></td>
+						<td>23.07.2022</td>
+						<td>
+						  <div class="d-flex align-items-center">
+							<div>
+								<a href="" class="text-body font-weight-semibold letter-icon-title">ООО Ракета</a>
+								<div class="text-muted">+7 343 567 6578</div>
+							</div>
+						  </div>
+						</td>
+						<td>Для оплаты товаров</td>
+						<td><span class="badge badge-info">Возвращено на склад</span></td>
+						<td>
+						  <div class="d-flex align-items-center">
+							<div>
+								<a href="#" class="text-body font-weight-semibold letter-icon-title">Иванов Иван</a>
+							</div>
+						  </div>
+						</td>
+						<td>100 000 ₽</td>
+						<td>
+						  <div class="list-icons">
+							  <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+							  <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+						  </div>
+						</td>
+					  </tr>
+				  </tbody>
+			  </table>
+			</div>
+		  </div>
 	</div>
 </div>

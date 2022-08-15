@@ -17,6 +17,7 @@
     <li class="nav-item"><a href="#bottom-tab33" class="nav-link" data-toggle="tab">Состояние товара</a></li>
 	<li class="nav-item"><a href="#bottom-tab2" class="nav-link" data-toggle="tab">Структура счета</a></li>
     <li class="nav-item"><a href="#bottom-tab4" class="nav-link" data-toggle="tab">Проводки</a></li>
+    <li class="nav-item"><a href="#bottom-tab6" class="nav-link" data-toggle="tab">Доставки</a></li>
     <li class="nav-item"><a href="#bottom-tab5" class="nav-link" data-toggle="tab">Финансовые операции</a></li>
 </ul>
 <div class="tab-content">
@@ -458,5 +459,73 @@
                 </table>
             </div>
         </div>
+    </div>
+    <div class="tab-pane  fade show " id="bottom-tab6">
+        <div class="card">
+            <div class="card-header bg-white header-elements-inline">
+              <h6 class="card-title">Доставки</h6>
+              <div class="header-elements">
+                <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#modal_import">Добавить</button>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped small">
+                  <thead>
+                      <tr>
+                        <th>id</th>
+                        <th>Дата занесения</th>
+                        <th>Дата доставки</th>
+                        <th>Клиент</th>
+                        <th>Адрес</th>
+                        <th>Тип</th>
+                        <th>Кем занесен</th>
+                        <th>Исполнитель</th>
+                        <th>Состояние</th>
+                        <th width="40"></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td><a href="kartochka-dostavki.html">456</a></td>
+                        <td>23.07.2022</td>
+                        <td>23.07.2022</td>
+                        <td>ООО Ромашка</td>
+                        <td>ул. Севильева 47</td>
+                        <td>Курьерская служба</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-body">Иванов Иван</span>
+                                <div class="text-muted">Ответственный</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-body">Сергеев Илья</span>
+                                <div class="text-muted">Инженер</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-body"><span class="badge badge-danger">Новый</span></span>
+                                <div class="text-muted">Иванов Иван 23.07.2022</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="list-icons">
+                              <a href="#" class="list-icons-item"><i class="icon-pencil7"></i></a>
+                              <a href="#" class="list-icons-item"><i class="icon-trash"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
     </div>
 </div>
